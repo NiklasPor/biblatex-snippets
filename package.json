@@ -1,0 +1,25 @@
+{
+  "name": "biblatex-snippets",
+  "displayName": "BibLaTeX Snippets",
+  "description": "Adds all identifiers for editing .bib files in BibLaTeX. An additional 'field' snippet is included to add optional fields to BibLaTeX entries.",
+  "repository": {
+    "url": "https://github.com/NiklasPor/biblatex-snippets.git",
+    "type": "git"
+  },
+  "publisher": "niklaspor",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.36.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "bibtex",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  }
+}

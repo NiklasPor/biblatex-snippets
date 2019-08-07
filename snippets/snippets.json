@@ -1,0 +1,330 @@
+{
+  "field": {
+    "prefix": "field",
+    "body": "${1:field} = {$0},"
+  },
+  "@article": {
+    "prefix": "@article",
+    "body": [
+      "@article{${1:key},",
+      "\ttitle = {${2:title}},",
+      "\tjournaltitle = {${3:journaltitle}},",
+      "\tauthor = {${4:author}},",
+      "\tyear = {${5:year}},",
+      "\t$0",
+      "}"
+    ]
+  },
+  "@book": {
+    "prefix": "@book",
+    "body": [
+      "@book{${1:key},",
+      "\ttitle = {${2:title}},",
+      "\tauthor = {${4:author}},",
+      "\tyear = {${5:year}},",
+      "\t$0",
+      "}"
+    ]
+  },
+  "@mvbook": {
+    "prefix": "@mvbook",
+    "body": [
+      "@mvbook{${1:key},",
+      "\ttitle = {${2:title}},",
+      "\tauthor = {${4:author}},",
+      "\tyear = {${5:year}},",
+      "\t$0",
+      "}"
+    ]
+  },
+  "@inbook": {
+    "prefix": "@inbook",
+    "body": [
+      "@inbook{${1:key},",
+      "\ttitle = {${2:title}},",
+      "\tbooktitle = {${4:booktitle}},",
+      "\tauthor = {${4:author}},",
+      "\tyear = {${5:year}},",
+      "\t$0",
+      "}"
+    ]
+  },
+  "@bookinbook": {
+    "prefix": "@bookinbook",
+    "body": [
+      "@bookinbook{${1:key},",
+      "\ttitle = {${2:title}},",
+      "\tbooktitle = {${4:booktitle}},",
+      "\tauthor = {${4:author}},",
+      "\tyear = {${5:year}},",
+      "\t$0",
+      "}"
+    ]
+  },
+  "@suppbook": {
+    "prefix": "@suppbook",
+    "body": [
+      "@suppbook{${1:key},",
+      "\ttitle = {${2:title}},",
+      "\tbooktitle = {${4:booktitle}},",
+      "\tauthor = {${4:author}},",
+      "\tyear = {${5:year}},",
+      "\t$0",
+      "}"
+    ]
+  },
+  "@booklet": {
+    "prefix": "@booklet",
+    "body": [
+      "@booklet{${1:key},",
+      "\ttitle = {${2:title}},",
+      "\tauthor = {${4:author}},",
+      "\tyear = {${5:year}},",
+      "\t$0",
+      "}"
+    ]
+  },
+  "@collection": {
+    "prefix": "@collection",
+    "body": [
+      "@collection{${1:key},",
+      "\ttitle = {${2:title}},",
+      "\tauthor = {${4:author}},",
+      "\tyear = {${5:year}},",
+      "\t$0",
+      "}"
+    ]
+  },
+  "@mvcollection": {
+    "prefix": "@mvcollection",
+    "body": [
+      "@mvcollection{${1:key},",
+      "\ttitle = {${2:title}},",
+      "\teditor = {${4:editor}},",
+      "\tyear = {${5:year}},",
+      "\t$0",
+      "}"
+    ]
+  },
+  "@incollection": {
+    "prefix": "@incollection",
+    "body": [
+      "@incollection{${1:key},",
+      "\ttitle = {${2:title}},",
+      "\tauthor = {${3:author}},",
+      "\teditor = {${4:editor}},",
+      "\tbooktitle = {${5:booktitle}},",
+      "\tyear = {${6:year}},",
+      "\t$0",
+      "}"
+    ]
+  },
+  "@suppcollection": {
+    "prefix": "@suppcollection",
+    "body": [
+      "@suppcollection{${1:key},",
+      "\ttitle = {${2:title}},",
+      "\tauthor = {${3:author}},",
+      "\teditor = {${4:editor}},",
+      "\tbooktitle = {${5:booktitle}},",
+      "\tyear = {${6:year}},",
+      "\t$0",
+      "}"
+    ]
+  },
+  "@manual": {
+    "prefix": "@manual",
+    "body": [
+      "@manual{${1:key},",
+      "\ttitle = {${2:title}},",
+      "\tauthor = {${3:author}},",
+      "\tyear = {${6:year}},",
+      "\t$0",
+      "}"
+    ]
+  },
+  "@misc": {
+    "prefix": "@misc",
+    "body": [
+      "@misc{${1:key},",
+      "\ttitle = {${2:title}},",
+      "\tauthor = {${3:author}},",
+      "\tyear = {${6:year}},",
+      "\t$0",
+      "}"
+    ]
+  },
+  "@online": {
+    "prefix": "@online",
+    "body": [
+      "@online{${1:key},",
+      "\turl = {${2:url}},",
+      "\ttitle = {${3:title}},",
+      "\tauthor = {${4:author}},",
+      "\tyear = {${5:year}},",
+      "\t$0",
+      "}"
+    ]
+  },
+  "@online-clipboard": {
+    "prefix": "@online-clipboard",
+    "body": [
+      "@online{$CLIPBOARD,",
+      "\turl = {${2:url}},",
+      "\ttitle = {${3:title}},",
+      "\tauthor = {${4:author}},",
+      "\tyear = {${5:year}},",
+      "\t$0",
+      "}"
+    ]
+  },
+  "@patent": {
+    "prefix": "@patent",
+    "body": [
+      "@patent{${1:key},",
+      "\ttitle = {${2:title}},",
+      "\tauthor = {${3:author}},",
+      "\tnumber = {${4:number}},",
+      "\tyear = {${6:year}},",
+      "\t$0",
+      "}"
+    ]
+  },
+  "@periodical": {
+    "prefix": "@periodical",
+    "body": [
+      "@periodical{${1:key},",
+      "\ttitle = {${2:title}},",
+      "\teditor = {${3:editor}},",
+      "\tyear = {${6:year}},",
+      "\t$0",
+      "}"
+    ]
+  },
+  "@suppperiodical": {
+    "prefix": "@suppperiodical",
+    "body": [
+      "@suppperiodical{${1:key},",
+      "\ttitle = {${2:title}},",
+      "\teditor = {${3:editor}},",
+      "\tyear = {${6:year}},",
+      "\t$0",
+      "}"
+    ]
+  },
+  "@proceedings": {
+    "prefix": "@proceedings",
+    "body": [
+      "@proceedings{${1:key},",
+      "\ttitle = {${2:title}},",
+      "\teditor = {${3:editor}},",
+      "\tyear = {${6:year}},",
+      "\t$0",
+      "}"
+    ]
+  },
+  "@mvproceedings": {
+    "prefix": "@mvproceedings",
+    "body": [
+      "@mvproceedings{${1:key},",
+      "\ttitle = {${2:title}},",
+      "\teditor = {${3:editor}},",
+      "\tyear = {${6:year}},",
+      "\t$0",
+      "}"
+    ]
+  },
+  "@inproceedings": {
+    "prefix": "@inproceedings",
+    "body": [
+      "@inproceedings{${1:key},",
+      "\ttitle = {${2:title}},",
+      "\tbooktitle = {${3:booktitle}},",
+      "\tauthor = {${4:author}},",
+      "\teditor = {${5:editor}},",
+      "\tyear = {${6:year}},",
+      "\t$0",
+      "}"
+    ]
+  },
+  "@reference": {
+    "prefix": "@reference",
+    "body": [
+      "@reference{${1:key},",
+      "\ttitle = {${2:title}},",
+      "\tauthor = {${4:author}},",
+      "\tyear = {${5:year}},",
+      "\t$0",
+      "}"
+    ]
+  },
+  "@mvreference": {
+    "prefix": "@mvreference",
+    "body": [
+      "@mvreference{${1:key},",
+      "\ttitle = {${2:title}},",
+      "\teditor = {${4:editor}},",
+      "\tyear = {${5:year}},",
+      "\t$0",
+      "}"
+    ]
+  },
+  "@inreference": {
+    "prefix": "@inreference",
+    "body": [
+      "@inreference{${1:key},",
+      "\ttitle = {${2:title}},",
+      "\tauthor = {${3:author}},",
+      "\teditor = {${4:editor}},",
+      "\tbooktitle = {${5:booktitle}},",
+      "\tyear = {${6:year}},",
+      "\t$0",
+      "}"
+    ]
+  },
+  "@report": {
+    "prefix": "@report",
+    "body": [
+      "@report{${1:key},",
+      "\ttitle = {${2:title}},",
+      "\tauthor = {${3:author}},",
+      "\tyear = {${4:year}},",
+      "\tinstitution = {${5:institution}},",
+      "\ttype = {${6:type}},",
+      "\t$0",
+      "}"
+    ]
+  },
+  "@set": {
+    "prefix": "@set",
+    "body": ["@set{${1:key},", "\t$0", "}"]
+  },
+  "@thesis": {
+    "prefix": "@thesis",
+    "body": [
+      "@thesis{${1:key},",
+      "\ttitle = {${2:title}},",
+      "\tauthor = {${3:author}},",
+      "\tyear = {${4:year}},",
+      "\tinstitution = {${5:institution}},",
+      "\ttype = {${6:type}},",
+      "\t$0",
+      "}"
+    ]
+  },
+  "@unpublished": {
+    "prefix": "@unpublished",
+    "body": [
+      "@unpublished{${1:key},",
+      "\ttitle = {${2:title}},",
+      "\tauthor = {${4:author}},",
+      "\tyear = {${5:year}},",
+      "\t$0",
+      "}"
+    ]
+  },
+  "@xdata": {
+    "prefix": "@xdata",
+    "body": ["@xdata{${1:key},", "\t$0", "}"]
+  }
+}

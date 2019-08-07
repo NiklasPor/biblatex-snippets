@@ -12,9 +12,3 @@ This extensions supports all types of BibLaTeX entries listed in the [documentat
 - A `@online-clipboard` snippet, using the clipboard content as an URL for creating an online entry.
 
 ![demo](demo.gif)
-
-## Release Notes
-
-### 1.0.0
-
-Initial release of **BibLaTeX Snippets**

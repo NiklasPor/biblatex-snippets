@@ -169,8 +169,8 @@
   "@online-clipboard": {
     "prefix": "@online-clipboard",
     "body": [
-      "@online{$CLIPBOARD,",
-      "\turl = {${2:url}},",
+      "@online{${1:key},",
+      "\turl = {$CLIPBOARD},",
       "\ttitle = {${3:title}},",
       "\tauthor = {${4:author}},",
       "\tyear = {${5:year}},",

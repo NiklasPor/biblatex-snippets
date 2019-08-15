@@ -15,6 +15,7 @@ This extensions supports all types of BibLaTeX entries listed in the [documentat
 **Other additions:**
 
 - A `field` snippet is generating an additional field for an entry.
-- A `@online-clipboard` snippet, using the clipboard content as an URL for creating an online entry.
+- An `urldate` snippet adding a urldate field, containing the current date.
+- A `@online-clipboard` snippet, using the clipboard content as an URL for creating an online entry. Also has an `urldate` field with the current day set.
 
 ![demo](demo.gif)

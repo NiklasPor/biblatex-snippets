@@ -3,8 +3,12 @@
     "prefix": "field",
     "body": "${1:field} = {$0},"
   },
+  "urldate": {
+    "prefix": "urldate today",
+    "body": "urldate = {${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DAY}},"
+  },
   "@article": {
-    "prefix": "@article",
+    "prefix": "@ article",
     "body": [
       "@article{${1:key},",
       "\ttitle = {${2:title}},",
@@ -16,7 +20,7 @@
     ]
   },
   "@book": {
-    "prefix": "@book",
+    "prefix": "@ book",
     "body": [
       "@book{${1:key},",
       "\ttitle = {${2:title}},",
@@ -27,7 +31,7 @@
     ]
   },
   "@mvbook": {
-    "prefix": "@mvbook",
+    "prefix": "@ mvbook",
     "body": [
       "@mvbook{${1:key},",
       "\ttitle = {${2:title}},",
@@ -38,7 +42,7 @@
     ]
   },
   "@inbook": {
-    "prefix": "@inbook",
+    "prefix": "@ inbook",
     "body": [
       "@inbook{${1:key},",
       "\ttitle = {${2:title}},",
@@ -50,7 +54,7 @@
     ]
   },
   "@bookinbook": {
-    "prefix": "@bookinbook",
+    "prefix": "@ bookinbook",
     "body": [
       "@bookinbook{${1:key},",
       "\ttitle = {${2:title}},",
@@ -62,7 +66,7 @@
     ]
   },
   "@suppbook": {
-    "prefix": "@suppbook",
+    "prefix": "@ suppbook",
     "body": [
       "@suppbook{${1:key},",
       "\ttitle = {${2:title}},",
@@ -74,7 +78,7 @@
     ]
   },
   "@booklet": {
-    "prefix": "@booklet",
+    "prefix": "@ booklet",
     "body": [
       "@booklet{${1:key},",
       "\ttitle = {${2:title}},",
@@ -85,7 +89,7 @@
     ]
   },
   "@collection": {
-    "prefix": "@collection",
+    "prefix": "@ collection",
     "body": [
       "@collection{${1:key},",
       "\ttitle = {${2:title}},",
@@ -96,7 +100,7 @@
     ]
   },
   "@mvcollection": {
-    "prefix": "@mvcollection",
+    "prefix": "@ mvcollection",
     "body": [
       "@mvcollection{${1:key},",
       "\ttitle = {${2:title}},",
@@ -107,7 +111,7 @@
     ]
   },
   "@incollection": {
-    "prefix": "@incollection",
+    "prefix": "@ incollection",
     "body": [
       "@incollection{${1:key},",
       "\ttitle = {${2:title}},",
@@ -120,7 +124,7 @@
     ]
   },
   "@suppcollection": {
-    "prefix": "@suppcollection",
+    "prefix": "@ suppcollection",
     "body": [
       "@suppcollection{${1:key},",
       "\ttitle = {${2:title}},",
@@ -133,7 +137,7 @@
     ]
   },
   "@manual": {
-    "prefix": "@manual",
+    "prefix": "@ manual",
     "body": [
       "@manual{${1:key},",
       "\ttitle = {${2:title}},",
@@ -144,7 +148,7 @@
     ]
   },
   "@misc": {
-    "prefix": "@misc",
+    "prefix": "@ misc",
     "body": [
       "@misc{${1:key},",
       "\ttitle = {${2:title}},",
@@ -155,7 +159,7 @@
     ]
   },
   "@online": {
-    "prefix": "@online",
+    "prefix": "@ online",
     "body": [
       "@online{${1:key},",
       "\turl = {${2:url}},",
@@ -167,10 +171,11 @@
     ]
   },
   "@online-clipboard": {
-    "prefix": "@online-clipboard",
+    "prefix": "@ online clipboard",
     "body": [
       "@online{${1:key},",
       "\turl = {$CLIPBOARD},",
+      "\turldate = {${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DAY}},",
       "\ttitle = {${3:title}},",
       "\tauthor = {${4:author}},",
       "\tyear = {${5:year}},",
@@ -179,7 +184,7 @@
     ]
   },
   "@patent": {
-    "prefix": "@patent",
+    "prefix": "@ patent",
     "body": [
       "@patent{${1:key},",
       "\ttitle = {${2:title}},",
@@ -191,7 +196,7 @@
     ]
   },
   "@periodical": {
-    "prefix": "@periodical",
+    "prefix": "@ periodical",
     "body": [
       "@periodical{${1:key},",
       "\ttitle = {${2:title}},",
@@ -202,7 +207,7 @@
     ]
   },
   "@suppperiodical": {
-    "prefix": "@suppperiodical",
+    "prefix": "@ suppperiodical",
     "body": [
       "@suppperiodical{${1:key},",
       "\ttitle = {${2:title}},",
@@ -213,7 +218,7 @@
     ]
   },
   "@proceedings": {
-    "prefix": "@proceedings",
+    "prefix": "@ proceedings",
     "body": [
       "@proceedings{${1:key},",
       "\ttitle = {${2:title}},",
@@ -224,7 +229,7 @@
     ]
   },
   "@mvproceedings": {
-    "prefix": "@mvproceedings",
+    "prefix": "@ mvproceedings",
     "body": [
       "@mvproceedings{${1:key},",
       "\ttitle = {${2:title}},",
@@ -235,7 +240,7 @@
     ]
   },
   "@inproceedings": {
-    "prefix": "@inproceedings",
+    "prefix": "@ inproceedings",
     "body": [
       "@inproceedings{${1:key},",
       "\ttitle = {${2:title}},",
@@ -248,7 +253,7 @@
     ]
   },
   "@reference": {
-    "prefix": "@reference",
+    "prefix": "@ reference",
     "body": [
       "@reference{${1:key},",
       "\ttitle = {${2:title}},",
@@ -259,7 +264,7 @@
     ]
   },
   "@mvreference": {
-    "prefix": "@mvreference",
+    "prefix": "@ mvreference",
     "body": [
       "@mvreference{${1:key},",
       "\ttitle = {${2:title}},",
@@ -270,7 +275,7 @@
     ]
   },
   "@inreference": {
-    "prefix": "@inreference",
+    "prefix": "@ inreference",
     "body": [
       "@inreference{${1:key},",
       "\ttitle = {${2:title}},",
@@ -283,7 +288,7 @@
     ]
   },
   "@report": {
-    "prefix": "@report",
+    "prefix": "@ report",
     "body": [
       "@report{${1:key},",
       "\ttitle = {${2:title}},",
@@ -296,11 +301,11 @@
     ]
   },
   "@set": {
-    "prefix": "@set",
+    "prefix": "@ set",
     "body": ["@set{${1:key},", "\t$0", "}"]
   },
   "@thesis": {
-    "prefix": "@thesis",
+    "prefix": "@ thesis",
     "body": [
       "@thesis{${1:key},",
       "\ttitle = {${2:title}},",
@@ -313,7 +318,7 @@
     ]
   },
   "@unpublished": {
-    "prefix": "@unpublished",
+    "prefix": "@ unpublished",
     "body": [
       "@unpublished{${1:key},",
       "\ttitle = {${2:title}},",
@@ -324,7 +329,7 @@
     ]
   },
   "@xdata": {
-    "prefix": "@xdata",
+    "prefix": "@ xdata",
     "body": ["@xdata{${1:key},", "\t$0", "}"]
   }
 }

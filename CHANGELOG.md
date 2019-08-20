@@ -2,6 +2,10 @@
 
 All notable changes to the "biblatex-snippets" extension will be documented in this file.
 
+## 1.0.5
+
+- Fix `CURRENT_DAY` appearing in snippets instead of real date
+
 ## 1.0.4
 
 - Edit prefixes to also use enable without `@`

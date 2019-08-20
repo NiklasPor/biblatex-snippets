@@ -5,7 +5,7 @@
   },
   "urldate": {
     "prefix": "urldate today",
-    "body": "urldate = {${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DAY}},"
+    "body": "urldate = {${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}},"
   },
   "@article": {
     "prefix": "@ article",
@@ -175,7 +175,7 @@
     "body": [
       "@online{${1:key},",
       "\turl = {$CLIPBOARD},",
-      "\turldate = {${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DAY}},",
+      "\turldate = {${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}},",
       "\ttitle = {${3:title}},",
       "\tauthor = {${4:author}},",
       "\tyear = {${5:year}},",
